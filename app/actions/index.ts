@@ -28,7 +28,7 @@ export async function joinWaitlist(prevState: any, formData: FormData) {
         from: "Lumina <onboarding@lowurl.in>",
         to: email,
         subject: "Welcome To Lumina",
-        react: WelcomeEmail({ userName: insertemail.name }) as any,
+        react: WelcomeEmail({ userName: name }) as any,
       });
       console.log(sendMail);
     }
